@@ -1,0 +1,132 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background: linear-gradient(#ccc 0%, #eee 100%);
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+    font-family: ‘Arial Narrow’, sans-serif;
+    font-weight: 100;
+    font-size: 1.1em;
+    letter-spacing: 0.063em;
+    line-height: 3.1em;
+    color: #fff;  
+    text-shadow: 0 0 0.063em #7a7a7a;
+  }
+  
+  .wrapper {
+    position: relative;
+    top: 2.52em;
+    width: 21.7em;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  #flip {
+    position: relative;
+    width: 9.45em;
+    height: 3.15em;
+    background: transparent;
+    transform-style: preserve-3d;
+  }
+  
+  #btn1 {
+    position: absolute;
+    width: 9.45em;
+    height: 3.15em;
+    background: #18a397;  
+    border-radius: 0.189em;
+    text-align: center;
+    cursor: pointer;
+    border: 0.126em solid #0b988c;
+    z-index: 1;
+  }
+  
+  #btn1:hover {
+    transition: 0.2s ease-in-out;
+    background: #0b988c;
+  }
+  
+  .submit {
+    position: absolute;
+    width: 9.45em;
+    height: 3.15em;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden; 
+            transform-style: preserve-3d;
+
+  }
+  
+  .sent {
+    position: absolute;
+    width: 9.45em;
+    height: 3.15em;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transform: rotateX(180deg);
+    z-index: 2;
+  }
+  
+  .animate {
+    animation: .2s flip linear forwards;
+  }
+  
+  @keyframes flip {
+      100% {
+          transform: rotateX(180deg);
+      }
+  }
+  
+  #btn2 {
+    position: absolute;
+    width: 9.45em;
+    height: 3.15em;
+    left: 12em;
+    background: #45b1e4;  
+    border-radius: 0.189em;
+    text-align: center;
+    cursor: pointer;
+    border: 0.126em solid #18a8e1;
+    z-index: 1;
+  }
+  
+  #btn2:hover {
+    transition: 0.2s ease-in-out;
+    background: #18a8e1;
+  }
+  
+  #container {
+    position: relative;
+    width: 9.45em;
+    height: 3.15em;
+    background: transparent;
+    transform-style: preserve-3d;
+  }
+  
+  .opacity {
+    animation: .4000s opacity linear forwards;
+  }
+  
+  @keyframes opacity {
+      25% {
+          opacity: 0.5;
+      }
+      50% {
+          opacity: 0;
+      }
+      60% {
+          opacity: 0;
+      }
+      75% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 1;
+          transform: rotateX(180deg);
+      }
+  }
