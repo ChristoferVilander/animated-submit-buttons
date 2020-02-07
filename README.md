@@ -7,4 +7,5 @@ Safari
 Works fine 
 
 Firefox and Chrome
+
 The animation in the blue button is, for some reason, not working. 
